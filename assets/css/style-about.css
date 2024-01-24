@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --principal-color: #9D665B;
+    --principal-color-second: #434343;
+    --secondary-color: #998573;
+    --white-color: #FFFFFF;
+    --primary-font: 'Abhaya Libre';
+    --secondary-font: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--white-color);
+    color: var(--principal-color);
+    font-family: 'Abhaya Libre', Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+footer {
+    display: flex;
+    background-color: var(--principal-color);
+    color: var(--white-color);
+    padding: 2rem;
+    text-align: center;
+    justify-content: ;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #fff; 
+}
+::-webkit-scrollbar-thumb {
+    background: var(--principal-color);
+    border-radius: 2px;
+}
+
+main {
+    display: flex;
+    height: 100vw;
+}
+
+.section__main {
+    width: auto;
+    height: 180px;
+    top: 0;
+    background-color: var(--principal-color);
+}
+
+.main__session {
+    display: grid;
+    padding: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1.3% 0 0 0;
+}
+
+.h1__article__main {
+    color: var(--white-color);
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.main__container {
+    display: flex;
+    flex-direction: row;
+    margin: 10% 0 0 0;
+}
+
+.main__img {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    align-items: last baseline;
+    gap: 1rem;
+    padding: 0 1rem 0 0 ;
+}
+.main__second__img {
+    width: 60vw;
+}
+
+.main__img img {
+    width: 300px;
+}
+
+.main__second__img img {
+    width: 616px;
+}
+
+.area__text {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5em 0 0 0;
+    color: var(--principal-color-second);
+}
+
+.text__about {
+    width: 60vw;
+    font-family: var(--primary-font);
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.text__about__second {
+    font-family: var(--primary-font);
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 480px) {
+    .main__container {
+        width: 100vw;
+    }
+
+    .main__img img{
+        width: 25vw;
+    }
+
+    .main__second__img img {
+        width: 50vw;
+    }
+
+}
