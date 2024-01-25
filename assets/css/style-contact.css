@@ -305,6 +305,7 @@ main {
         width: 80%;
         font-size: var(--text-size);
         overflow-x: hidden;
+        white-space: nowrap;
         text-overflow: ellipsis;
     }
 
