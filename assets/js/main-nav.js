@@ -21,3 +21,7 @@ function linkAction() {
     this.classList.add('active');
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
+
+document.getElementById('h2__inicio__alternativo').addEventListener('click', function (e) {
+    e.preventDefault();
+});  
