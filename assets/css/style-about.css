@@ -126,8 +126,9 @@ main {
 
 .text__about__second {
     font-family: var(--primary-font);
-    font-size: 1.5em;
-    font-weight: 500;
+    font-size: var(--text-size);
+    font-weight: var(--text-weight);
+    letter-spacing: var(--text-space-letter);
     text-align: justify;
 }
 
@@ -145,11 +146,16 @@ main {
         width: 53vw;
     }
     .main__session {
+        display: flex;
+        text-align: center;
+        height: 8.75rem;
         margin-top: 0;
     }
     .h1__article__main {
+        padding: 0 2rem 0 2rem;
         font-size: 1.6rem;
-        padding: 0 4rem;
+        align-items: center;
+        justify-content: center;
     }
     .text__about {
         width: 80vw;

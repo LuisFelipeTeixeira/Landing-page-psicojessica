@@ -261,6 +261,15 @@ footer {
     }
 }
 
+@media screen and (max-width: 770px) and (min-width: 760px) {
+    .main__session {
+        padding: 1rem 5rem 1rem 5rem;
+    }
+    .section__main {
+        height: auto;
+    }
+}
+
 @media screen and (max-width: 580px) {
     .section__main {
         height: 280px;
@@ -275,9 +284,14 @@ footer {
         width: 100vw;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
-    .div__texto__p {
+    .div__textos__p {
         text-align: justify;
+        width: 86vw;
+        padding: 0;
+        margin: 0;
+        letter-spacing: var(--text-space-letter);
     }
     .div_img img {
         width: 15rem;
@@ -296,14 +310,6 @@ footer {
     }
     .inicio h1 {
         font-size: 2rem;
-    }
-    .inicio p {
-        font-size: 1.3rem;
-        width: 100vw;
-        text-align:left;
-        margin: 0;
-        padding: 0 2rem 2rem 2rem;
-        letter-spacing: 0.3px;
     }
     .inicio {
         margin: 0 0 10% 0;

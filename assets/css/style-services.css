@@ -29,9 +29,11 @@ body {
 ::-webkit-scrollbar {
     width: 10px;
 }
+
 ::-webkit-scrollbar-track {
-    background: #fff; 
+    background: #fff;
 }
+
 ::-webkit-scrollbar-thumb {
     background: var(--principal-color);
     border-radius: 2px;
@@ -88,7 +90,7 @@ body {
 
 .services__item img {
     width: 25rem;
-    height: 18,5rem;
+    height: 18, 5rem;
     border-radius: 10px;
     object-fit: cover;
 }
@@ -108,6 +110,7 @@ body {
     font-weight: var(--text-weight);
     letter-spacing: var(--text-space-letter);
 }
+
 .divisoria {
     border: 0;
     height: 1px;
@@ -128,7 +131,7 @@ body {
     text-align: center;
     padding: 0 0 2rem 0;
     font-weight: var(--subtitle-weight);
-    letter-spacing: var(--subtitle-space-letter);   
+    letter-spacing: var(--subtitle-space-letter);
 }
 
 .accordion-container {
@@ -213,7 +216,7 @@ footer {
         display: flex;
         flex-direction: column;
         position: relative;
-        margin:0;
+        margin: 0;
     }
 
     .services__header {
@@ -223,13 +226,13 @@ footer {
 
     .services__content {
         width: 100%;
-        margin:0;
+        margin: 0;
     }
-    
+
     .services__item {
         padding: 4rem 1rem 4rem 1rem;
     }
-    
+
     .services__item img {
         width: 350px;
         height: 300px;
@@ -242,46 +245,62 @@ footer {
         height: auto;
         padding: 1px;
     }
+
     .p__atendimento {
-        font-size: 1.4rem ;
+        font-size: 1.4rem;
     }
+
     .whatsapp_float {
         width: 6rem;
         height: 6rem;
         font-size: 4.5rem;
     }
+
     .whatsapp-icon {
         margin-top: 0.7rem;
         margin-left: 0.2rem;
     }
+
     .services__header {
         width: 100vw;
         height: auto;
         top: 0;
         margin-top: -4rem;
     }
-    
+
     .services__header h1 {
         font-weight: 700;
         font-size: 1.8rem;
         padding: 1rem 0 0 0;
     }
+
     .services__container {
         margin-top: 4rem;
     }
 }
-@media screen and (max-width: 770px) and (min-width: 760px){
 
+@media screen and (max-width: 770px) and (min-width: 760px) {
+    .services__header {
+        margin: -1rem;
+    }
 }
 
 @media screen and (max-width: 580px) {
     .services__header {
-        margin: -4.5rem 0 0 0;
+        display: flex;
+        text-align: center;
         height: auto;
+        margin-top: 0;
+        margin-top: -1rem;
     }
+
     .services__header h1 {
-        font-size: 1.4rem;
+        padding: 0 2rem 0 2rem;
+        font-size: 1.6rem;
+        align-items: center;
+        justify-content: center;
     }
+
     .services__content {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -290,7 +309,7 @@ footer {
         align-items: center;
     }
 
-    .item img{
+    .item img {
         margin: 0;
     }
 
@@ -299,15 +318,18 @@ footer {
         height: 4rem;
         font-size: 3rem;
     }
+
     .whatsapp-icon {
         margin-top: 0.4rem;
         margin-left: 0.1rem;
     }
+
     .services__item {
         display: flex;
         flex-direction: column;
         width: auto;
     }
+
     .services__item img {
         width: 80%;
         height: auto;

@@ -10,7 +10,7 @@
     --secondary-font: Arial, sans-serif;
     --text-size: 1.3rem;
     --text-weight: 500;
-    --text-space-letter: 1.2px; 
+    --text-space-letter: 1.2px;
     --subtitle-size: 1.9rem;
     --subtitle-weight: 300;
     --subtitle-space-letter: 1.5px;
@@ -109,6 +109,7 @@ main {
     font-weight: 500;
     letter-spacing: 1.2px;
 }
+
 .contact {
     display: flex;
     padding: 6rem 8rem 0 8rem;
@@ -123,7 +124,7 @@ main {
     align-items: center;
     gap: 1.5rem;
     padding: 0.6em 0 0.8em 0;
-    margin: 0 0 0 3rem;
+    margin: 0 0 0 1rem;
 }
 
 .iframe {
@@ -219,16 +220,18 @@ main {
 
 
 @media screen and (max-width: 900px) {
-    .contact { 
+    .contact {
         display: flex;
         flex-direction: column;
     }
+
     .icons-area {
         display: flex;
         width: 100vw;
         padding: 0;
         margin: 0;
     }
+
     .iframe {
         width: auto;
         height: 20rem;
@@ -236,21 +239,33 @@ main {
     }
 }
 
+@media screen and (max-width: 770px) and (min-width: 760px) {
+    .title-feedback {
+        margin: 0;
+    }
+    .iframe {
+        display: flex;
+        width: auto;
+        height: 25rem;
+        padding: 5rem 1rem 0 1rem;
+    }
+}
+
 @media screen and (max-width: 580px) {
     .title-feedback {
         display: flex;
         text-align: center;
-        height: auto;
-        margin: 0;
-        padding: 0;
+        height: 8.75rem;
+        margin-top: 0;
     }
-    
+
     .text-feedback {
         padding: 0 2rem 0 2rem;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         align-items: center;
         justify-content: center;
     }
+
     .info-atendimento {
         display: flex;
         text-align: center;
@@ -261,24 +276,38 @@ main {
         width: 100vw;
         padding: 0;
     }
+
+    .icons {
+        width: 100vw;
+        display: grid;
+    }
+
     .icons-area {
         display: grid;
         grid-template-columns: 10% 90%;
         width: 100vw;
-        padding: 0.5rem 0 0 1rem;
-        margin: 1rem 0 0 0;
+        padding: 1rem 0 0 1rem;
+        margin: 0;
     }
+
     .icon {
         display: flex;
         width: 100%;
         font-size: 1.4rem;
         margin: 0rem 0rem;
     }
+
+    .icontextdec {
+        width: 95vw;
+    }
+
     .icon-text {
         width: 80%;
         font-size: var(--text-size);
-        text-wrap:wrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
+
     .iframe {
         display: flex;
         width: auto;
@@ -291,14 +320,17 @@ main {
     .hr_atendimento {
         font-size: 1.7rem;
     }
+
     .icon {
         display: none;
     }
+
     .icon-text {
         width: 100vw;
         font-size: var(--text-size);
         text-align: center;
     }
+
     .icons-area {
         padding: 0;
     }
