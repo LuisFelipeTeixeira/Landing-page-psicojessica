@@ -56,7 +56,7 @@ main {
 .title-feedback {
     display: flex;
     width: 100vw;
-    height: 10px;
+    height: 160px;
     background-color: var(--principal-color);
     margin: 1.3% 0 0 0;
     align-items: center;
@@ -144,10 +144,6 @@ main {
     align-items: center;
     gap: 5px;
 }
-@media only screen and (max-width: 1024px) {
-
-}
-
 @media screen and (max-width: 900px) {
     .area_img img {
         display: none;
@@ -168,6 +164,7 @@ main {
         display: flex;
         text-align: center;
         height: auto;
+        margin-top: 0;
     }
     
     .text-feedback {

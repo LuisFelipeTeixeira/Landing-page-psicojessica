@@ -232,7 +232,7 @@ footer {
         width: 100vw;
         height: auto;
         top: 0;
-        margin: 1.5% 0 0 0;
+        margin-top: -4rem;
     }
     
     .services__header h1 {
@@ -240,16 +240,17 @@ footer {
         font-size: 1.8rem;
         padding: 1rem 0 0 0;
     }
+    .services__container {
+        margin-top: 4rem;
+    }
 }
 @media screen and (max-width: 770px) and (min-width: 760px){
-    .services__container { 
-        margin-top: -4rem;
-    }
+
 }
 
 @media screen and (max-width: 580px) {
     .services__header {
-        margin: -3.4rem 0 0 0;
+        margin: -4.5rem 0 0 0;
         height: auto;
     }
     .services__header h1 {

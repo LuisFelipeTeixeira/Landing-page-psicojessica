@@ -241,7 +241,7 @@ footer {
 
 @media screen and (max-width: 580px) {
     .section__main {
-        height: 350px;
+        height: 280px;
     }
     .button__first {
         display: grid;
@@ -269,6 +269,7 @@ footer {
         text-align: center;
         font-size: 1.5rem;
         text-decoration: none;
+        color: var(--principal-color);
     }
     .inicio h1 {
         font-size: 2rem;
@@ -304,6 +305,6 @@ footer {
     }
 
     .main__session {
-        padding: 3rem 5rem 5rem 5rem;
+        padding: 1rem 5rem 0rem 5rem;
     }
 }

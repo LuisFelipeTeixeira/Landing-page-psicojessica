@@ -131,7 +131,7 @@ main {
         width: 53vw;
     }
     .main__session {
-        margin: 0;
+        margin-top: 0;
     }
     .h1__article__main {
         font-size: 1.6rem;
@@ -148,5 +148,40 @@ main {
         font-size: 1.5em;
         font-weight: 500;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width:580px) {
+    .main__container {
+        width: 100vw;
+        padding: 0 1.5rem 0 0;
+    }
+
+    .main__img img{
+        width: 24vw;
+    }
+    .main__second__img img {
+        width: 50vw;
+    }
+    .main__session {
+        margin-top: 4rem;
+    }
+    .text__about {
+        width: 80vw;
+        font-size: 1.4em;
+        text-align: justify;
+    }
+    
+    .text__about__second {
+        width: 80vw;
+        font-size: 1.5em;
+        font-weight: 500;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 770px) and (min-width: 760px){
+    .main__session {
+        margin-top: 0;
     }
 }
