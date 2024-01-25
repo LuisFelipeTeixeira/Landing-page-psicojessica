@@ -7,6 +7,12 @@
     --white-color: #FFFFFF;
     --primary-font: 'Abhaya Libre';
     --secondary-font: Arial, sans-serif;
+    --text-size: 1.3rem;
+    --text-weight: 500;
+    --text-space-letter: 1.2px; 
+    --subtitle-size: 1.9rem;
+    --subtitle-weight: 300;
+    --subtitle-space-letter: 1.5px;
 }
 
 body {
@@ -23,6 +29,9 @@ footer {
     color: var(--white-color);
     padding: 2rem;
     text-align: center;
+    font-size: var(--text-size);
+    font-weight: 600;
+    letter-spacing: var(--text-space-letter);
 }
 ::-webkit-scrollbar {
     width: 10px;
@@ -51,19 +60,23 @@ main {
 .main__session {
     display: grid;
     width: 100vw;
-    height: 100%;
+    height: auto;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 4% 0 0 0;
     background-color: var(--principal-color);
+    top: 0;
+    padding: 2.5rem;
+    margin: 4rem 0 0 0;
 }
 
 .h1__article__main {
     color: var(--white-color);
     font-family: var(--primary-font);
     font-weight: 500;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
+    margin: 0;
+    letter-spacing: var(--subtitle-space-letter);
 }
 
 .main__container {
@@ -85,11 +98,11 @@ main {
 }
 
 .main__img img {
-    width: 300px;
+    width: 270px;
 }
 
 .main__second__img img {
-    width: 616px;
+    width: 559px;
 }
 
 .area__text {
@@ -105,8 +118,9 @@ main {
 .text__about {
     width: 60vw;
     font-family: var(--primary-font);
-    font-size: 1.5em;
-    font-weight: 500;
+    font-size: var(--text-size);
+    font-weight: var(--text-weight);
+    letter-spacing: var(--text-space-letter);
     text-align: justify;
 }
 

@@ -8,6 +8,12 @@
     --white-color: #FFFFFF;
     --primary-font: 'Abhaya Libre';
     --secondary-font: Arial, sans-serif;
+    --text-size: 1.3rem;
+    --text-weight: 500;
+    --text-space-letter: 1.2px; 
+    --subtitle-size: 1.9rem;
+    --subtitle-weight: 300;
+    --subtitle-space-letter: 1.5px;
 }
 
 body {
@@ -24,6 +30,9 @@ footer {
     color: var(--white-color);
     padding: 2rem;
     text-align: center;
+    font-size: var(--text-size);
+    font-weight: 600;
+    letter-spacing: var(--text-space-letter);
 }
 
 ::-webkit-scrollbar {
@@ -56,19 +65,22 @@ main {
 .title-feedback {
     display: flex;
     width: 100vw;
-    height: 160px;
+    height: auto;
     background-color: var(--principal-color);
-    margin: 1.3% 0 0 0;
     align-items: center;
     justify-content: center;
     top: 0;
+    padding: 2.5rem;
+    margin: 4rem 0 0 0;
 }
 
 .text-feedback {
     color: var(--white-color);
     font-family: var(--primary-font);
     font-size: 2.5rem;
-    padding: 2.5rem 0 0 0;
+    font-weight: 500;
+    letter-spacing: var(--subtitle-space-letter);
+    margin: 0;
 }
 
 .divison-feedback {
@@ -135,6 +147,9 @@ main {
 .area_text {
     width: 85%;
     margin: 0;
+    font-size: var(--text-size);
+    font-weight: var(--text-weight);
+    letter-spacing: var(--text-space-letter);
 }
 
 .area_img {
@@ -144,6 +159,12 @@ main {
     align-items: center;
     gap: 5px;
 }
+.area_img p {
+    font-size: var(--text-size);
+    font-weight: var(--text-weight);
+    letter-spacing: var(--text-space-letter);
+}
+
 @media screen and (max-width: 900px) {
     .area_img img {
         display: none;
