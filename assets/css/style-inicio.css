@@ -292,6 +292,7 @@ footer {
         font-size: 1.5rem;
         text-decoration: none;
         color: var(--principal-color);
+        -webkit-touch-callout: none;
     }
     .inicio h1 {
         font-size: 2rem;
