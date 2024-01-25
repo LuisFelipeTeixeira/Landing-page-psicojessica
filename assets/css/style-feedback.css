@@ -217,12 +217,12 @@ main {
     }
     .card_first {
         display: flex;
-        padding: 0 1.5rem 0 0rem;
+        padding: 0 0 0 1.5rem;
         font-size: 1.1rem;
         font-weight: 700;
     }
     .area_img__star {
-        padding-right: 2rem;
+        padding-right: 0;
     }
     .area_img__star img {
         width: 1rem;

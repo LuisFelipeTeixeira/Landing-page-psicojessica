@@ -304,7 +304,7 @@ main {
     .icon-text {
         width: 80%;
         font-size: var(--text-size);
-        overflow: hidden;
+        overflow-x: hidden;
         text-overflow: ellipsis;
     }
 
