@@ -307,7 +307,10 @@ main {
         font-size: var(--text-size);
         word-wrap: break-word;
         overflow-wrap: break-word;
+<<<<<<< HEAD
         overflow-x: hidden;
+=======
+>>>>>>> a906a7e77eff7531669bf137d7ee277acef14004
     }
 
     .iframe {
