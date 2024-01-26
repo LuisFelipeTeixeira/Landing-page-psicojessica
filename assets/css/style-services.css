@@ -206,7 +206,7 @@ footer {
     color: var(--white-color);
     padding: 2rem;
     text-align: center;
-    font-size: var(--text-size);
+    font-size: 1rem;
     font-weight: 600;
     letter-spacing: var(--text-space-letter);
 }

@@ -36,30 +36,45 @@ body {
 }
 
 .section__main {
-    width: auto;
-    height: 300px;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
     top: 0;
-    background-color: var(--principal-color);
+    color: #fff;
+}
+.section__main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(../img/atendimento/escritorio.jpeg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    opacity: 0.7;
+    z-index: -1;
 }
 
 .main__session {
+    width: 100vw;
+    height: 100vh;
     display: grid;
-    padding: 5rem;
+    padding: 10rem;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    place-items: center;
 }
 
 .button__first {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin: 1.5rem 9rem 1.5rem 9rem;
-    width: 40%;
+    width: 100%;
     border-radius: 8px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 400;
-    padding: 8px 0;
+    padding: 1rem;
     text-decoration: none;
     color: var(--white-color);
     font-family: var(--primary-font);
@@ -74,14 +89,15 @@ body {
 .h1__article__main {
     color: var(--white-color);
     font-family: var(--primary-font);
-    font-weight: 400;
-    font-size: 1.5rem;
+    font-weight: 600;
+    font-size: 2rem;
 }
 
 .h3__article__main {
     color: var(--white-color);
     font-family: var(--primary-font);
-    font-weight: 400;
+    font-weight: 600;
+    font-size: 2rem;
 }
 
 /*===== END =====*/
@@ -133,7 +149,7 @@ body {
     width: 500px;
     align-items: center;
     justify-content: center;
-    margin: 5% 0 0 15%;
+    margin: 10% 0 0 15%;
 }
 
 
@@ -150,6 +166,9 @@ body {
 
 .div_img {
     width: 50%;
+}
+.div_img img {
+    border-radius: 50%;
 }
 
 .divisoria {
@@ -199,7 +218,7 @@ footer {
     color: var(--white-color);
     padding: 2rem;
     text-align: center;
-    font-size: var(--text-size);
+    font-size: 1rem;
     font-weight: 600;
     letter-spacing: var(--text-space-letter);
 }
@@ -259,14 +278,60 @@ footer {
         margin-top: 0.7rem;
         margin-left: 0.2rem;
     }
+    .main__session {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 5rem 5rem 5rem;
+    }
+    .section__main {
+        height: auto;
+    }
+    .button__first {
+        font-size: 2rem;
+        margin: 0;
+        padding: 0.5rem;
+    }    
+    .h1__article__main {
+        font-size: 2.5rem;
+        margin: 0;
+        padding: 8rem 2rem 2rem 2rem;
+    }
+    .h3__article__main {
+        font-size: 2.5rem;
+        margin: 0;
+        padding: 2rem 2rem 8rem 2rem;
+    }
 }
 
 @media screen and (max-width: 770px) and (min-width: 760px) {
     .main__session {
-        padding: 1rem 5rem 1rem 5rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 5rem 8rem 5rem;
     }
     .section__main {
         height: auto;
+    }
+    .button__first {
+        font-size: 2rem;
+        margin: 0;
+        padding: 0.5rem;
+    }    
+    .h1__article__main {
+        font-size: 2.5rem;
+        margin: 0;
+        padding: 5rem 2rem 2rem 2rem;
+    }
+    .h3__article__main {
+        font-size: 2.5rem;
+        margin: 0;
+        padding: 2rem 2rem 5rem 2rem;
     }
 }
 
@@ -310,6 +375,7 @@ footer {
     }
     .inicio h1 {
         font-size: 2rem;
+        padding: 2.5rem;
     }
     .inicio {
         margin: 0 0 10% 0;
@@ -333,7 +399,32 @@ footer {
         margin-left: 0.1rem;
     }
 
+    .section__main {
+        width: 100vw;
+        height: 95vh;
+    }
     .main__session {
-        padding: 1rem 5rem 0rem 5rem;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 20%;
+    }
+    .button__first {
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0.5rem;
+    }    
+    .h1__article__main {
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 5rem 2rem 2rem 2rem;
+    }
+    .h3__article__main {
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 2rem 2rem 5rem 2rem;
     }
 }

@@ -29,7 +29,7 @@ footer {
     color: var(--white-color);
     padding: 2rem;
     text-align: center;
-    font-size: var(--text-size);
+    font-size: 1rem;
     font-weight: 600;
     letter-spacing: var(--text-space-letter);
 }
@@ -83,12 +83,13 @@ main {
     display: flex;
     flex-direction: row;
     margin: 10% 0 0 0;
+    
 }
 
 .main__img {
     display: flex;
     flex-direction: column;
-    width: 40vw;
+    width: 45vw;
     align-items: last baseline;
     gap: 1rem;
     padding: 0 1rem 0 0 ;
@@ -98,11 +99,11 @@ main {
 }
 
 .main__img img {
-    width: 270px;
+    width: 246px;
 }
 
 .main__second__img img {
-    width: 559px;
+    width: 500px;
 }
 
 .area__text {
