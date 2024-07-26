@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
 
 :root {
-    --principal-color: #9D665B;
     --principal-color-second: #434343;
     --principal-color-second-rgb: rgb(65, 65, 65, 0.3);
+    --principal-color: #673a27;
+    --background-color: #996a55;
+    --principal-color-second: #434343;
     --secondary-color: #998573;
     --white-color: #FFFFFF;
     --primary-font: 'Abhaya Libre';
@@ -28,13 +30,31 @@ body {
 }
 
 footer {
-    background-color: var(--principal-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
     color: var(--white-color);
     padding: 2rem;
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 600;
     letter-spacing: var(--text-space-letter);
+}
+
+.copyrights {
+    font-size: 1rem;
+    margin-top: 3rem;
+}
+
+.footer-logo {
+    width: 12rem;
 }
 
 ::-webkit-scrollbar {
@@ -46,7 +66,7 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--principal-color);
+    background: var(--background-color);
     border-radius: 2px;
 }
 
@@ -68,7 +88,7 @@ main {
     display: flex;
     width: 100vw;
     height: auto;
-    background-color: var(--principal-color);
+    background-color: var(--background-color);
     margin: 0 0 0 0;
     align-items: center;
     justify-content: center;
@@ -94,6 +114,7 @@ main {
     font-size: 1.9rem;
     font-weight: 300;
     letter-spacing: 1.5px;
+    color: var(--principal-color-second);
 }
 
 .info-atendimento {
@@ -239,6 +260,21 @@ main {
         height: 20rem;
         padding: 3rem 2rem 0 2rem;
     }
+    .footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .copyrights {
+        width: 90%;
+        margin: 1rem 0 4rem 0;
+    }
+    
+    .footer-logo {
+        width: 10rem;
+    }
 }
 
 @media screen and (max-width: 770px) and (min-width: 760px) {
@@ -311,6 +347,8 @@ main {
         font-size: var(--text-size);
         margin: 0;
         padding: 1rem 0 0 0;
+        overflow-x: hidden;
+        
     }
 
     .iframe {
@@ -318,6 +356,21 @@ main {
         width: auto;
         height: 20rem;
         padding: 5rem 1rem 0 1rem;
+    }
+    .footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .copyrights {
+        width: 90%;
+        margin: 1rem 0 4rem 0;
+    }
+    
+    .footer-logo {
+        width: 10rem;
     }
 }
 
