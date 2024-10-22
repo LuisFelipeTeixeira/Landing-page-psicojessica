@@ -402,4 +402,23 @@ footer {
     .footer-logo {
         width: 10rem;
     }
+
+    .title-feedback {
+        width: 70%;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .divison-feedback {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+    .div-text {
+        width: 90%;
+        height: auto;
+        padding: 1rem 0 1rem 0;
+    }
 }
