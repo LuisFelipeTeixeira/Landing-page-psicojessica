@@ -191,14 +191,15 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(to bottom, #673A27, #9B7B6A, #CFC4BF, #ffffff);
+    position: relative;
 }
+
 
 .insta_title {
     width: 45%;
     font-size: 2.5rem;
     font-family: var(--Cormorant-Garamond);
-    color: var(--white-color);
+    color: var(--text-light-brown);
 }
 
 .div_insta_images {
@@ -348,9 +349,6 @@ footer {
 
 
 @media screen and (max-width: 580px) {
-    .section__main {
-        height: 280px;
-    }
     .button__contact {
         display: grid;
         width: 12rem;
@@ -366,34 +364,22 @@ footer {
         margin-top: 0.4rem;
         margin-left: 0.1rem;
     }
-
-    .section__main {
-        width: 100vw;
-        height: 95vh;
-    }
-    .main__session {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 20%;
-    }
     .button__contact {
         font-size: 1.5rem;
-        margin: 0;
         padding: 0.5rem;
+        margin: 4rem 0 0 0;
     }    
     .h1__article__main {
+        width: 100%;
         font-size: 1.5rem;
         margin: 0;
-        padding: 5rem 2rem 2rem 2rem;
+        padding: 0 1rem 0 1rem;
     }
     .h3__article__main {
+        display: none;
         font-size: 1.5rem;
         margin: 0;
-        padding: 2rem 2rem 5rem 2rem;
+        padding: 2rem 2rem 1rem 2rem;
     }
     .footer {
         display: flex;
@@ -406,8 +392,84 @@ footer {
         width: 90%;
         margin: 1rem 0 4rem 0;
     }
-    
+
+
+    .main__session {
+        display: flex;
+        width: 80%;
+        height: 100vh;
+        gap: 20rem;
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section__main {
+        width: 100%;
+        min-height: 90vh;
+        max-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section__main::before {
+        width: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-position: center;
+        background-image: url(../img/fts/fundo-inicio-mobile.png);
+    }
+
+
+    .article_desire {
+        width: 100%;
+    }
+
+    .box_desire_div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .box_desire {
+        width: 85%;
+    }
+
+    .text_box_desire {
+        font-size: 1.3rem;
+    }
+
+    .text-desire {
+        width: 75%;
+        padding-top: 1rem;
+    }
+
+    .article_insta {
+        width: 100%;
+        height: 100%;
+        padding-top: 5rem 0 5rem 0;
+        margin: 2rem 0 4rem 0;
+    }
+
+    .insta_title {
+        width: 80%;
+    }
+
+    .div_insta_images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+
     .footer-logo {
-        width: 10rem;
+        display: none;
     }
 }
