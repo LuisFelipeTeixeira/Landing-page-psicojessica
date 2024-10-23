@@ -331,10 +331,9 @@ main {
         width: 10rem;
     }
 
-    .contato-fixo svg {
-        width: 2rem;
-        height: auto;
-        padding: 10px 0 10px 5px;
+    .whatsapp_float svg {
+        width: 2.5rem !important;
+        padding: 13px 0 14px 4px !important;
     }
 
 }
