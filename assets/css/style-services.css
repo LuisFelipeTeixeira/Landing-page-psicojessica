@@ -17,28 +17,6 @@
     --subtitle-space-letter: 1.5px;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--white-color);
-    color: var(--principal-color);
-    font-family: 'Abhaya Libre', Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
-    width: 100vw;
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #fff;
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--principal-color);
-    border-radius: 2px;
-}
 
 .services__container {
     display: grid;
@@ -347,8 +325,6 @@ footer {
     }
 }
 
-@media screen and (max-width: 770px) and (min-width: 760px) {
-}
 
 @media screen and (max-width: 580px) {
 

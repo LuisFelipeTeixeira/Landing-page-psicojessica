@@ -260,6 +260,10 @@ main {
         height: 20rem;
         padding: 3rem 2rem 0 2rem;
     }
+
+    .title-feedback {
+        width: 100%;
+    }
     .footer {
         display: flex;
         align-items: center;
