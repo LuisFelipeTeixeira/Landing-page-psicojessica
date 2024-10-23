@@ -379,6 +379,11 @@ footer {
         width: 10rem;
     }
 
+    .feedback {
+        height: 100%;
+        padding: 1rem 0 1rem 0;
+    }
+
     .title-feedback {
         width: 70%;
         font-size: 2rem;
