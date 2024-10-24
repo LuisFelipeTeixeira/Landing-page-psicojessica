@@ -36,10 +36,10 @@ footer {
 
 .footer {
     display: flex;
-    flex-direction: row;
-    width: 60%;
+    flex-direction: column;
+    width: 100%;
     color: var(--white-color);
-    padding: 2rem;
+    padding: 0 0 2rem 0;
     text-align: center;
     font-size: 0.8rem;
     font-weight: 600;
@@ -49,10 +49,6 @@ footer {
 .copyrights {
     font-size: 1rem;
     margin-top: 3rem;
-}
-
-.footer-logo {
-    width: 12rem;
 }
 
 ::-webkit-scrollbar {
@@ -243,7 +239,7 @@ main {
     .content {
         width: 100vw;
         display: flex;
-        flex-direction: column;
+        flex-direction: column !important;
     }  
 
     .img_area {
@@ -327,10 +323,6 @@ main {
         margin: 1rem 0 4rem 0;
     }
 
-    .footer-logo {
-        width: 10rem;
-    }
-
     .whatsapp_float svg {
         width: 2.5rem !important;
         padding: 13px 0 14px 4px !important;
@@ -342,22 +334,57 @@ main {
     .section__main {
         display: flex;
         flex-direction: column;
-        width: 100vw;
+        align-items: center;
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
     }
 
     .iframe-about {
         width: 100vw;
+        height: 90vh;
     }
 
-    .iframe {
+    .iframe iframe {
+        width: 70%;
+        height: 350px;
+    }
+
+    .iframe-text {
+        font-size: 1.5rem;
+    }
+
+    .img_area {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .img_about {
+        height: 80%;
         width: auto;
+        background-size: cover;
+        background-position: center;
     }
-
 
     .text__about {
         width: 80vw;
         font-size: 1.4em;
         text-align: justify;
+    }
+
+    .work_details {
+        width: 100%;
+    }
+
+    .about-work-content {
+        height: auto;
+        margin-top: 1rem;
     }
 
     .footer {
@@ -372,7 +399,4 @@ main {
         margin: 1rem 0 4rem 0;
     }
 
-    .footer-logo {
-        width: 10rem;
-    }
 }

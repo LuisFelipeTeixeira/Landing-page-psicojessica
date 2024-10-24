@@ -237,12 +237,11 @@ footer {
 
 .footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     color: var(--white-color);
-    padding: 1rem 2rem;
+    padding: 0 0 2rem 0;
     text-align: center;
-    justify-content: center;
     font-size: 0.8rem;
     font-weight: 600;
     letter-spacing: var(--text-space-letter);
@@ -251,10 +250,6 @@ footer {
 .copyrights {
     font-size: 1rem;
     margin-top: 3rem;
-}
-
-.footer-logo {
-    width: 10rem;
 }
 
 .nav__name {
@@ -362,10 +357,6 @@ footer {
     .copyrights {
         width: 90%;
         margin: 1rem 0 4rem 0;
-    }
-
-    .footer-logo {
-        width: 10rem;
     }
 }
 
@@ -496,9 +487,5 @@ footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 0.5rem;
-    }
-
-    .footer-logo {
-        display: none;
     }
 }
